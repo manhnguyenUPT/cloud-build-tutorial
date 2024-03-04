@@ -8,7 +8,7 @@ app = Flask(__name__)
 def main():
     someVarFromEnv = os.environ.get('someVar')
     return 'I have changed the text here for testing: {}!\n second line'.format(someVarFromEnv)
-
+# test build
 if __name__ == "__main__":
     app.debug = True
     app.host='0.0.0.0'
